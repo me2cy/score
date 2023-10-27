@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="score.css">
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">creditscore</a>
+       <div class="topbar">
+        <div class="dropdown">
+            <button class="dropbtn">Products 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">get your creditscore  </a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <a href="#news">Get a loan </a>
+        <a href="#contact">Contact</a>
+       
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+       </div>
+    </div>
+<div class="land">
+<div class="container"><!-- START CONTAINER -->
+    <div class="itemone-header">
+        <header><!-- START HEADER -->
+            <div id="bitcoin"><i class="fab fa-bitcoin"></i></div>
+            <h1 id="title">
+                <ul>
+                    <li>Creditscore</li>
+                    <li>and</li>
+                    <li>Blockchain  ID</li>
+                    <li>unlock possibilities </li>
+                </ul>
+            </h1>
+        </header>
+    </div>
+
+    <div class="itemtwo-description">
+        <p id="description">We want to hear about your opinion on creditscore and blockchain technology. A
+            blockchain is a digital asset designed to work as a medium of exchange that uses strong crytography.
+            Blockchain technology is an incorruptible digital ledger of economic transactions that can be programmed to
+            record not just financial transactions but virtually everything of value.</p>
+            <button class="open-button" onclick="openForm()">Get your score</button>
+
+    </div>
+
+    <div class="itemthree-main"><!-- START FORM 
+        <form id="survey-form" action="#" method="post">
+            <div class="row">
+                <table>
+                    <tr>
+                        <td class="left-column"><label id="name-label" for="name">*Name:</label></td>
+                        <td class="right-column"><input type="text" id="name" name="demographics"
+                                placeholder="Enter your full name" required></td>
+                    </tr>
+                    <tr>
+                        <td class="left-column"><label id="email-label" for="email">*Email:</label></td>
+                        <td class="right-column"><input type="email" id="email" name="demographics"
+                                placeholder="bitcoin@example.com" pattern=".+@blockchainbb.com" minlength="5"
+                                maxlength="64" required></td>
+                    </tr>
+                    <tr>
+                        <td class="left-column"><label id="number-label" for="number">*Age:</label></td>
+                        <td class="right-column"><input type="number" id="number" name="demographics" value="age"
+                                min="10" max="100" placeholder="Enter your age" required></td>
+                    </tr>
+                    <tr>
+                        <td class="left-column"><label for="gender">*Gender:</label></td>
+                        <td class="right-column"><input type="text" id="gender" placeholder="Enter your gender"></td>
+                    <tr>
+                        <td class="left-column"><label>*Ethnic Origin: Please specifiy your ethnicity.</label></td>
+                        <td class="right-column"><select id="dropdown" name="ethnic origin">
+                                <option value="White">White</option>
+                                <option value="Hispanic or Latino">Hispanic or Latino</option>
+                                <option value="Black or African American">Black or African American</option>
+                                <option value="Native American or American Indian">Native American or American Indian
+                                </option>
+                                <option value="Asian / Pacific Islander">Asian / Pacific Islander</option>
+                                <option value="Other: (Please specify)">Other: (Please specify)</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td class="left-column"><label>*Education: What is the highest degree or level of school you
+                                have completed? <em>If currently, enrolled, highest degree received.</em></label></td>
+                        <td class="right-column"><select name="education">
+                                <option value="No schooling completed">No schooling completed</option>
+                                <option value="Nursery school to 8th grade">Nursery school to 8th grade</option>
+                                <option value="Some high school, no diploma">Some high school, no diploma</option>
+                                <option value="High school graduate, diploma or the equivalent (for example: GED)">High
+                                    school graduate, diploma or the equivalent (for example: GED)</option>
+                                <option value="Some college credit, no degree">Some college credit, no degree</option>
+                                <option value="Trade/technical/vocational training">Trade/technical/vocational training
+                                </option>
+                                <option value="Associate degree (e.g. AA, AS)">Associate degree (e.g. AA, AS)</option>
+                                <option value="Bachelor’s degree (e.g. BA, BS)">Bachelor’s degree (e.g. BA, BS)</option>
+                                <option value="Master’s degree (e.g. MA, MS, MEd)">Master’s degree (e.g. MA, MS, MEd)
+                                </option>
+                                <option value="Professional degree (e.g. MD, DDS, DVM)">Professional degree (e.g. MD,
+                                    DDS, DVM)</option>
+                                <option value="Doctorate degree (e.g. PhD, EdD)">Doctorate degree (e.g. PhD, EdD)
+                                </option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td class="left-column"><label>*Employment Status: What is your current employment
+                                status?</label></td>
+                        <td class="right-column"><select name="employement status">
+                                <option value="*Employed full time (40 or more hours per week)">Employed full time (40
+                                    or more hours per week)</option>
+                                <option value="Employed part time (up to 39 hours per week)">Employed part time (up to
+                                    39 hours per week)</option>
+                                <option value="Self-employed">Self-employed</option>
+                                <option value="Unemployed and currently looking for work">Unemployed and currently
+                                    looking for work</option>
+                                <option value="Unemployed but not currently looking for work">Unemployed but not
+                                    currently looking for work</option>
+                                <option value="A homemaker">A homemaker</option>
+                                <option value="A student">A student</option>
+                                <option value="Military">Military</option>
+                                <option value="Retired">Retired</option>
+                                <option value="Unable to work">Unable to work</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td class="left-column"><label>How much, if at all, do you know about cryptocurrency?</label>
+                        </td>
+                        <td class="right-column"><select name="q1">
+                                <option value="Expert (recognized authority)">Expert (recognized authority)</option>
+                                <option value="Advanced (applied theory)">Advanced (applied theory)</option>
+                                <option value="Intermediate (practical application)">Intermediate (practical
+                                    application)</option>
+                                <option value="Novice (limited experience)">Novice (limited experience)</option>
+                                <option value="Fundamental Awareness (Basic knowledge)">Fundamental Awareness (Basic
+                                    knowledge)</option>
+                                <option value="N/A">N/A</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td class="left-column"><label>Do you own cryptocurrency?</label></td>
+                        <td class="right-column"><input type="radio" name="radio" value="yes">Yes
+                            <input type="radio" name="radio" value="no">No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left-column"><label>If yes, what type of cryptocurrency do you own? (Select all that
+                                apply)</label></td>
+                        <div class="checkbox">
+                            <td class="right-column"><input type="checkbox" value="checkbox" width="10px">Bitcoin<br>
+                                <input type="checkbox" value="checkbox" width="10px">Altcoin<br>
+                                <input type="checkbox" value="checkbox" width="10px">Tokens/dApps<br>
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td class="left-column"><label>If no, how likely are you to invest in cryptocurrency this
+                                year?</label></td>
+                        <td class="right-column"><select name="q4">
+                                <option value="Extremely likely">Extremely likely</option>
+                                <option value="Very likely">Very likely</option>
+                                <option value="Somewhat likely">Somewhat likely</option>
+                                <option value="Not so likely">Not so likely</option>
+                                <option value="Not at all likely">Not at all likely</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td class="left-column"><label>How much, if at all, do you know about blockchain
+                                technology?</label></td>
+                        <td class="right-column"><select name="q5">
+                                <option value="Expert (recognized authority)">Expert (recognized authority)</option>
+                                <option value="Advanced (applied theory)">Advanced (applied theory)</option>
+                                <option value="Intermediate (practical application)">Intermediate (practical
+                                    application)</option>
+                                <option value="Novice (limited experience)">Novice (limited experience)</option>
+                                <option value="Fundamental Awareness (Basic knowledge)">Fundamental Awareness (Basic
+                                    knowledge)</option>
+                                <option value="NA">N/A</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td class="left-column"><label>What type of Blockchain do you prefer? Select all that
+                                apply.</label></td>
+                        <td class="right-column"><select name="q6">
+                                <option value="Public Blockchain (e.g. Bitcoin, Litecoin)">Public Blockchain (e.g.
+                                    Bitcoin, Litecoin)</option>
+                                <option value="Private Blockchain (e.g. Bankchain)">Private Blockchain (e.g. Bankchain)
+                                </option>
+                                <option value="Consortium or Federated Blockchain (e.g. r3, EWF)">Consortium or
+                                    Federated Blockchain (e.g. r3, EWF)</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td class="left-column"><label>What applications of blockchain technology do you see the
+                                most?</label></td>
+                        <td class="right-column"><select name="q7">
+                                <option value="As a system of record (e.g. digital identity, tokenization, etc)">As a
+                                    system of record (e.g. digital identity, tokenization, etc)</option>
+                                <option value="As a platform (e.g. smart contracting, automated governance, etc)">As a
+                                    platform (e.g. smart contracting, automated governance, etc)</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td class="left-column"><label>Any Comments or Suggestions?</label></td>
+                        <td class="right-column"><textarea id="" rows="5" cols="40vw"></textarea></td>
+                    </tr>
+                </table><br>
+                <div class="button-wrapper">
+                    <input id="submit" type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>-->
+   
+
+<div class="form-popup" id="myForm">
+    <form action="https://www.w3schools.com/action_page.php" class="form-container">
+        <h6>get your credit score </h6>
+        <label for="name"><b>Fullname</b></label>
+        <input type="text" placeholder="Enter full name" name="name" required>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>BVN</b></label>
+        <input type="password" placeholder="Enter" name="psw" required>
+
+        <button type="submit" class="btn">Submit</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+</div>
+<div class="callout">
+    <div class="callout-header">Get your Block-chain ID</div>
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+    <div class="callout-container">
+        <p> <a href="#">Learn more</a> or close it if it is in your way.</p>
+    </div>
+</div>
+<div class="itemfour-footer"><!-- START FOOTER -->
+    <footer>&copy; mercytech 2023</footer>
+</div>
+</div><!-- END CONTAINER -->
+     
+    <script src="score.js"></script>
+
+
+</body>
+
+</html>
