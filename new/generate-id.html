@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Id</title>
+    <link rel="stylesheet" href="score.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">creditscore</a>
+        <div class="topbar">
+            <div class="dropdown">
+                <button class="dropbtn">Products
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">credit reports </a>
+                    <a href="#">wallet management </a>
+                    <a href="#">monitory policy</a>
+                </div>
+            </div>
+            <a href="#news">Get a loan </a>
+            <a href="#contact">Contact</a>
+            <button class="open-button" onclick="openForm()">Get your score</button>
+    
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </div>
+
+    <a class="active block">Back</a>
+
+    <!-- Form -->
+
+    <div class="w-b" id="contact">
+        <form id="generate-id">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" placeholder="Phone Number">
+
+            <label for="email">Email</label>
+            <input type="email" class="full" id="email" placeholder="Email">
+
+            <input type="submit" value="Generate ID">
+        </form>
+    </div>
+
+    <div id="modal">
+        <div class="modal-bg">
+            <p id="modal-text">Generating Id</p>
+            <button onclick="closeModal()">close</button>
+        </div>
+        <div class="gray"></div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="itemfour-footer"><!-- START FOOTER -->
+        <footer>
+            <!-- &copy; mercytech 2023 -->
+            <div>
+                <h1 class="title">Creditso</h1>
+                <p>2147 William Street</p>
+                <p>+2348104156868</p>
+                <p><a href="mailto:creditso@gmail.com">Mail Us</a></p>
+            </div>
+            <div>
+                <h2>Quick Links</h2>
+                <div>
+                    <p><a href="#">Home</a></p>
+                    <p><a href="#">Products</a></p>
+                    <p><a href="#">Get a loan</a></p>
+                    <p><a href="#">Contact</a></p>
+                    <p><a href="#">About</a></p>
+                </div>
+            </div>
+            <div>
+                <h2>About Creditso</h2>
+                <p>In an ever-changing industry, Creditso is committed to providing a professional approach to your facility
+                    and personal finances. Whether you are a client seeking help in Accounts Receivables or a consumer
+                    paying on a bill, we
+                    are at your service.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function closeModal(){
+            document.querySelector("#modal").style.display = "none";
+        }
+        document.getElementById("generate-id").addEventListener("submit", (e) => {
+            e.preventDefault()
+            document.querySelector("#modal").style.display = "block";
+            const modalText = document.querySelector("#modal-text")
+            let count = 0;
+            const interval = setInterval(() => {
+                modalText.innerHTML += "."
+                count++;
+                console.log(count);
+                if(count === 4){
+                    clearInterval(interval);
+                    modalText.innerHTML = crypto.randomUUID()
+                }
+            }, 1000) 
+
+            // console.log("hello");
+        })
+        console.log(crypto.randomUUID());
+    </script>
+</body>
+</html>
